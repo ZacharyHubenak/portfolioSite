@@ -53,10 +53,6 @@ body.dark-mode .content {
     background-color: #333;
     border-color: #333;
 }
-body.dark-mode .button {
-    color: #fff;
-    border-color: #fff; 
-}
 .nav-container {
     position: fixed;
     top: 10px;
@@ -82,13 +78,6 @@ body.dark-mode .button {
     font-weight: bold;
 }
 
-body.dark-mode .nav-container {
-    background-color: #333;
-}
-
-body.dark-mode .nav-link {
-    color: #fff;
-}
 .nav-link.bottomRight {
     position: fixed;
     bottom: 10px;
@@ -109,4 +98,48 @@ body.dark-mode .nav-link {
     height: 115px; 
     margin-top: -115px; 
     visibility: hidden;
-  }
+}
+.mobile-footer {
+    background-color: #fff;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    gap: 15px;
+}
+.mobile-footer .nav-link {
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+body.dark-mode .mobile-footer{
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .content {
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+
+    .nav-container {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
