@@ -1,0 +1,112 @@
+html {
+    scroll-behavior: smooth;
+}
+.content {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.top-spacing {
+    margin-top: 80px;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Courier New', monospace;
+}
+
+.education-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.education-column {
+    display: flex;
+    flex-direction: column;
+}
+.education-column p {
+    margin: 0 0 10px 0;
+}
+
+.work-experience {
+    margin-top: 30px;
+}
+.work-item {
+    margin-bottom: 20px;
+}
+.work-item h6 {
+    margin: 0;
+    font-weight: bold;
+}
+.work-item p {
+    margin: 5px 0;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .content {
+    background-color: #333;
+    border-color: #333;
+}
+body.dark-mode .button {
+    color: #fff;
+    border-color: #fff; 
+}
+.nav-container {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    align-items: flex-start;
+}
+
+.nav-link {
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+body.dark-mode .nav-container {
+    background-color: #333;
+}
+
+body.dark-mode .nav-link {
+    color: #fff;
+}
+.nav-link.bottomRight {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    padding: 5px;
+}
+.nav-link.topRight {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    padding: 5px;
+}
+/*put here so the nav bar links scroll to center the subject*/
+.anchor{
+    display: block;
+    height: 115px; 
+    margin-top: -115px; 
+    visibility: hidden;
+  }

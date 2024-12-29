@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="I’m a full time student with a passion for problem-solving. I bring three years of part time service in the Virginia Army National Guard and four years of experience at a fast-paced startup. Outside work, I enjoy rock climbing, backpacking, and board games with friends.">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <head>
+        <title>Zachary Hubenak | CS Major @ GMU</title>
+    </head>
+
+    <body>
+        <span class="anchor" id="home"></span>
+        <script>
+            function darkMode() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    darkMode();
+                    darkModeToggle.checked = true;
+            }
+        </script>
+
+        <div class="nav-container top-spacing">
+            <a href="#home" class="nav-link topRight">^ Back to Top</a>
+            <a href="#about" class="nav-link">> About Me</a>
+            <a href="#Education" class="nav-link">> Education</a>
+            <a href="#Experience" class="nav-link">> Experience</a>
+            <a href="#Misc" class="nav-link">> Misc</a>
+            <a href="#Contact" class="nav-link">> Contact</a>
+            <!--when migrating update file path-->
+            <a href="/Users/zachhubenak/Documents/PortfolioSite/Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-link">> Resume.pdf</a>
+            <a href="https://github.com/ZacharyHubenak" class="nav-link" target="_blank">> GitHub</a>
+            <!--javascript:void(0) removes the chance of dark mode scrolling to the top-->
+            <a href="javascript:void(0)" class="nav-link bottomRight" onclick="darkMode()">> Dark Mode</a>
+        </div>
+
+        <div class="content top-spacing">
+            <h3><strong>Zachary Hubenak</strong></h3>
+            <h4>Computer Science Student at GMU</h4>
+            <h4>Virginia Army National Guardsmen</h4>
+        </div>
+
+        <span class="anchor" id="about"></span>
+        <div class="content">
+            <h5><strong>About me</strong></h5>
+            <p>I’m a full time student with a passion for problem-solving. I bring three years of part time service in the Virginia Army National Guard and four years of experience at a fast-paced startup. Outside work, I enjoy rock climbing, backpacking, and board games with friends.</p>
+        </div>
+
+        <span class="anchor" id="Education"></span>
+        <div class="content">
+            <h5><strong>Education</strong></h5>
+            <div class="education-layout">
+                <div class="education-column">
+                    <p>George Mason University</p>
+                    <p>Major: <u>Computer Science</u></p>
+                    <p>Graduating: 2026</p>
+                    <p>3.6 GPA</p>
+                    <br>
+                    <p><u>Relevant Coursework</u></p>
+                    <p>Data Structures & Algorithms</p>
+                    <p>Advanced Computer Architecture</p>
+                    <p>Linear Algebra</p>
+                    <p>Object-Oriented Programming</p>
+                    <p>Discrete Mathematics</p>
+                    <p>Multi-Variable Calculus</p>
+                </div>
+                <div class="education-column">
+                    <p style="text-indent: 25px;"><u>Skills</u></p>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>HTML + CSS</li>
+                        <li>JavaScript</li>
+                        <li>Linux</li>
+                        <li>GitHub</li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <span class="anchor" id="Experience"></span>
+        <div class="content" id="">
+            <h5><strong>Experience</strong></h5>
+            <div class="work-item">
+                <p><u>Virginia Army National Guard</u></p>
+                <p>3777 E Virginia Beach Blvd, Norfolk, VA 23502</p>
+                <p><i>Human Resources Specialist (SPC/E4)</i> | October 2021 - Present</p>
+                <p>Detail-Oriented HR Specialist with a secret clearance. Job focuses on data analysis and personnel management in a high-stakes environment.</p>
+            </div>
+            <div class="work-item">
+                <p><u>Dominion Drones</u></p>
+                <p>215 High Street, Portsmouth, VA 23704</p>
+                <p><i>Associate</i> | August 2020 - December 2024</p>
+                <p>Worked as a sales associate, contract specialist, and social media/website manager. Redesigned the logo and most of the website. Coordinated large sales with many companies and government agencies. In early 2021, I began handling all UAS/ROV repairs on top of my other duties.</p>
+            </div>
+        </div>
+
+        <span class="anchor" id="Misc"></span>
+        <div class="content" id="">
+            <h5><strong>Misc.</strong></h5>
+            <div class="work-item">
+                <p><u>Organizations</u></p>
+                <p>Member of GMU Coding Club</p>
+                <p>Member of GMU Climbing Club</p>
+                <p>Three-year DECA member and competitor</p>
+                <p>FBLA Kempsville High School Parliamentarian</p>
+            </div>
+            <div class="work-item">
+                <p><u>Certifications</u></p>
+                <p> Secret Clearance</p>
+            </div>
+            <div class="work-item">
+                <p><u>Additional Work Experience</u></p>
+                <p>Walmart | Sales Associate | 1 year</p>
+                <p>Wendy's | Crew Member | 1 year</p>
+            </div>
+        </div>
+        
+        <!--Update email to domain-->
+        <span class="anchor" id="Contact"></span>
+        <div class="content">
+            <h5><strong>Contact</strong></h5>
+            <p><strong>Phone:</strong> 504-303-2295</p>
+            <p><strong>Email:</strong> <a href="mailto:zwhubenak@gmail.com">zwhubenak@gmail.com</a></p>
+        </div>
+
+    </body>
+</html>
